@@ -1,0 +1,25 @@
+.color{
+    color: white;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+/* html, body{
+    height:100%;
+    width: 100%;
+    margin: 0;
+  } */
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: inset;
+    border-width: 2px;
+    color: white;
+  }
