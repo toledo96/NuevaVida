@@ -17,7 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/','PrincipalController@index');
+Route::get('/predicas','PrincipalController@predicas');
+Route::get('/grupos','PrincipalController@grupos');
+Route::get('/cultura','PrincipalController@cultura');
+Route::get('/ubicacion','PrincipalController@ubicacion');
+Route::get('/contacto','PrincipalController@contacto');
+Route::post('correo', 'PrincipalController@correo');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+

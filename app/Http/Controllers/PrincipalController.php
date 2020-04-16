@@ -17,6 +17,50 @@ class PrincipalController extends Controller
         return view('principal');
     }
 
+    public function predicas()
+    {
+        return view('predicas');
+    }
+
+    public function grupos()
+    {
+        return view('grupos');
+    }
+
+    public function ubicacion()
+    {
+        return view('ubicacion');
+    }
+
+    public function contacto()
+    {
+        return view('contacto');
+    }
+
+    public function cultura()
+    {
+        return view('cultura');
+    }
+
+    public function correo()
+    {
+        $nombre = var_dump(request('nombre'));
+        $tel =  var_dump(request('telefono'));
+        $edad = var_dump(request('edad'));
+        $grupo = var_dump(request('grupo'));
+        $asunto = var_dump(request('asunto'));
+        $men = var_dump(request('mensaje'));
+        $correo = var_dump(request('corroe'));
+
+        print_r($nombre);
+        print_r($tel);
+        print_r($asunto);
+        print_r($men);
+        print_r($grupo);
+        print_r($edad);
+        print_r($correo);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

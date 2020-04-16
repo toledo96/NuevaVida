@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,26 +16,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="icon" href="{{asset('app-assets/imagenes/nv.ico')}}" type="image/x-icon">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="{{asset('app-assets/js/gmaps.js')}}"></script>
+    @mapstyles
 </head>
 
-<body style="background-color: black;">
-
-
-    @include("layouts.carousel")
-    @yield("cabecera")
+<body style="background-color:#f4f4f4;">
 
 
     @include("layouts.navbar")
     @yield("navbar")
+    
+    <div style="padding-top: 60px;">
+      @include("layouts-ubicacion.map")
+      @yield("mapa")
+    <</div>
+    
+    
 
-
-    <div class="container-fluid">
-        @include("layouts.cuerpo")
-        @yield("cuerpo")
-    </div>
-
-    @yield("pie")
-
+    <!-- <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyClJTn8n6v-jGJf1HSMBBTH6U_jdSe_G4A'></script> -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClJTn8n6v-jGJf1HSMBBTH6U_jdSe_G4A&callback=initMap" type="text/javascript"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+    <!-- <script src="http://maps.google.com/maps/api/js"></script> -->
+    <!-- <script src="{{asset('app-assets/js/gmaps.js')}}"></script> -->
+    <!-- <script>
+      var map = new GMaps({
+        el: '#map',
+        lat: -12.043333,
+        lng: -77.028333
+      });
+  </script> -->
+  @mapscripts
 </body>
-
 </html>

@@ -2,14 +2,16 @@
 <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <img src="{{asset('app-assets/imagenes/explora3.png')}}" class="d-block w-100" alt="...">
+    <img src="{{asset('app-assets/imagenes/elamor.jpg')}}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-    <!-- <img src="{{asset('app-assets/imagenes/user.png')}}" height="15px"> -->
-      <img src="{{asset('app-assets/imagenes/explora2.png')}}" class="d-block w-100" alt="...">
+      <img src="{{asset('app-assets/imagenes/conexion3.jpg')}}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-    <img src="{{asset('app-assets/imagenes/explora2.png')}}" class="d-block w-100" alt="...">
+    <img src="{{asset('app-assets/imagenes/elamor3.jpg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="{{asset('app-assets/imagenes/reunion2.jpg')}}" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

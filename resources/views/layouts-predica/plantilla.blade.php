@@ -20,20 +20,18 @@
 <body style="background-color: black;">
 
 
-    @include("layouts.carousel")
-    @yield("cabecera")
-
-
     @include("layouts.navbar")
     @yield("navbar")
 
 
-    <div class="container-fluid">
-        @include("layouts.cuerpo")
-        @yield("cuerpo")
+    <div class="container" style="padding-top:70px; ">
+    <div class="card">
+        @include("layouts-predica.video")
+        @yield("video")
+    </div>
     </div>
 
-    @yield("pie")
+
 
 </body>
 

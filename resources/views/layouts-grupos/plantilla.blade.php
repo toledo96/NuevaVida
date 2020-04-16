@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,23 +18,20 @@
     <link rel="icon" href="{{asset('app-assets/imagenes/nv.ico')}}" type="image/x-icon">
 </head>
 
-<body style="background-color: black;">
-
-
-    @include("layouts.carousel")
-    @yield("cabecera")
+<body style="background-color:#f4f4f4;">
 
 
     @include("layouts.navbar")
     @yield("navbar")
 
-
-    <div class="container-fluid">
-        @include("layouts.cuerpo")
+    
+    <div style="padding-top:50px;">
+        @include("layouts-grupos.cuerpo")
         @yield("cuerpo")
     </div>
 
-    @yield("pie")
+
+
 
 </body>
 

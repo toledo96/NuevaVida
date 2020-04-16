@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,26 +16,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="icon" href="{{asset('app-assets/imagenes/nv.ico')}}" type="image/x-icon">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="{{asset('app-assets/js/gmaps.js')}}"></script>
 </head>
 
-<body style="background-color: black;">
-
-
-    @include("layouts.carousel")
-    @yield("cabecera")
+<body style="background-image:url('{{asset('app-assets/imagenes/contacto.jpg')}}');background-repeat:repeat-x-y; width:100%;">
 
 
     @include("layouts.navbar")
     @yield("navbar")
 
-
-    <div class="container-fluid">
-        @include("layouts.cuerpo")
+    <div class="container">
+        @include("layouts-contacto.cuerpo")
         @yield("cuerpo")
     </div>
-
-    @yield("pie")
+    
 
 </body>
-
 </html>
